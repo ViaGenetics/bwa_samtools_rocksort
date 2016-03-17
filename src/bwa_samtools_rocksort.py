@@ -221,7 +221,7 @@ def main(reads_1, reference, reference_index, read_group_sample, loglevel,
         # set of processes
         bam_files = [merged_bam]
 
-    sorted_bam = "tmp/sorted/sorted.{0}.bam".format(read_group_sample)
+    sorted_bam = "tmp/sorted/sorted.{0}".format(read_group_sample)
     samtools_sort_merged_cmd = "dx-samtools rocksort {0} -@ {1} -m {2}M {3} {4}".format(
         advanced_samtools_rocksort_options, cpus, max_ram,
         bam_files[0], sorted_bam)
