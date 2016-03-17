@@ -1,4 +1,4 @@
-# bwa_samtools Developer Readme
+# bwa_samtools_rocksort Developer Readme
 
 <!--
 TODO: Please edit this Readme.developer.md file to include information
