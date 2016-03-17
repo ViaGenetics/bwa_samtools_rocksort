@@ -239,7 +239,7 @@ def main(reads_1, reference, reference_index, read_group_sample, loglevel,
     # Mark duplicates in BAM file
 
     markdup_bam = "out/output_markdups_bams/{0}.markdups.bam".format(read_group_sample)
-    samtools_markdup_cmd = "samtools rmdup {0} --reference {1} {2} {3}".format(
+    samtools_markdup_cmd = "samtools rmdup {0} --reference {1} {2}.bam {3}".format(
         advanced_samtools_markdups_options, reference_filename,
         sorted_bam, markdup_bam)
     samtools_markdup = dx_exec.execute_command(samtools_markdup_cmd, debug=True)
