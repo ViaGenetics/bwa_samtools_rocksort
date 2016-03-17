@@ -226,7 +226,7 @@ def main(reads_1, reference, reference_index, read_group_sample, loglevel,
         advanced_samtools_rocksort_options, cpus, max_ram,
         bam_files[0], sorted_bam)
     samtools_sort_merge = dx_exec.execute_command(samtools_sort_merged_cmd)
-    dx_exec.check_execution_syscode(samtools_sort_merge, "Sort merged BAM")
+    dx_exec.check_execution_syscode(samtools_sort_merge, "Sort BAM")
 
     # Clean up temporary BAM files - this will save space on HDDs (useful for WGS)
 
