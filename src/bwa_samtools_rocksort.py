@@ -52,7 +52,7 @@ def main(reads_1, reference, reference_index, read_group_sample, loglevel,
     :param: `loglevel`:
     :param: `reads_2`:
     :param: `advanced_samtools_view_options`:
-    :param: `advanced_samtools_sort_options`:
+    :param: `advanced_samtools_rocksort_options`:
     :param: `advanced_samtools_markdups_options`:
     :param: `advanced_samtools_flagstat_options`:
     :returns: This will return an dx object with output generated. This is
